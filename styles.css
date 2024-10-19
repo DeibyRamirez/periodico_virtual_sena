@@ -61,9 +61,11 @@ footer {
 
 /* Reducir el tamaño de la imagen */
 img {
-    width: 300px; /* Ajusta según el tamaño deseado */
+    width: 300px;
+    /* Ajusta según el tamaño deseado */
     display: block;
-    margin: 0 auto; /* Para centrar la imagen */
+    margin: 0 auto;
+    /* Para centrar la imagen */
 }
 
 /* El contenido principal debe ocupar el espacio disponible */
@@ -72,27 +74,51 @@ main {
 }
 
 #crucigrama-juego {
-    margin-top: 20px; /* margen */
+    margin-top: 20px;
+    /* margen */
 }
 
 #cricugrama-juego table {
-    margin: 0 auto;
+    margin: 20px auto;
     border-collapse: collapse;
 }
 
+#crucigrama-juego td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    /* Bordes para las celdas */
+    background-color: #f0f0f0;
+    /* Fondo gris claro para las celdas */
+    text-align: center;
+}
+
+/* Estilo para los inputs (casillas) del crucigrama */
 #crucigrama-juego input {
     width: 100%;
     height: 100%;
     text-align: center;
-    font-size: 18px; /* tamaño de letra */
-    text-transform: uppercase;
+    font-size: 18px;
+    background-color: #d1e7dd;
+    /* Fondo verde claro */
+    color: #333;
+    /* Texto en color oscuro */
     border: none;
     outline: none;
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+}
+
+/* Cambiar el color de las celdas vacías (sin inputs) */
+#crucigrama-juego td:not(:has(input)) {
+    background-color: #fff;
+    /* Fondo blanco para las celdas vacías */
 }
 
 #verificar {
     display: block;
-    margin: 20px auto;  /* margen */
+    margin: 20px auto;
+    /* margen */
     padding: 10px 20px;
     background-color: #333;
     color: white;
@@ -106,6 +132,8 @@ main {
 
 #resultado {
     text-align: center;
-    margin-top: 20px;  /* margen superior */
-    font-size: 18px; /* tamaño de letra */
+    margin-top: 20px;
+    /* margen superior */
+    font-size: 18px;
+    /* tamaño de letra */
 }
