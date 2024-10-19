@@ -84,12 +84,12 @@ main {
 }
 
 #crucigrama-juego td {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: 1px solid #000;
-    /* Bordes para las celdas */
-    background-color: #f0f0f0;
-    /* Fondo gris claro para las celdas */
+    /* Bordes para las celdas visibles */
+    background-color: #e6f7ff;
+    /* Fondo azul claro  para las celdas con palabras*/
     text-align: center;
 }
 
@@ -98,9 +98,9 @@ main {
     width: 100%;
     height: 100%;
     text-align: center;
-    font-size: 18px;
-    background-color: #d1e7dd;
-    /* Fondo verde claro */
+    font-size: 20px;
+    background-color: #b3e5fc;
+    /* Fondo mas claro */
     color: #333;
     /* Texto en color oscuro */
     border: none;
@@ -109,10 +109,10 @@ main {
     /* Texto en mayúsculas */
 }
 
-/* Cambiar el color de las celdas vacías (sin inputs) */
-#crucigrama-juego td:not(:has(input)) {
-    background-color: #fff;
-    /* Fondo blanco para las celdas vacías */
+/* Ocultar las celdas que no tienen inputs */
+#crucigrama-juego td:empty {
+    border: none;
+    background-color: transparent;
 }
 
 #verificar {
