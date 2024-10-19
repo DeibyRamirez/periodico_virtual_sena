@@ -137,3 +137,11 @@ main {
     font-size: 18px;
     /* tamaño de letra */
 }
+
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: auto;
+}
