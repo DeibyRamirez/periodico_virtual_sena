@@ -146,23 +146,26 @@
         <!-- Crucigrama -->
         <section id="crucigrama">
             <h2>Crucigrama de la Cultura Institucional del SENA</h2>
+            
+            <!-- Pistas del crucigrama -->
             <div id="pistas">
                 <h3>Horizontal</h3>
                 <ul>
-                    <li><strong>1:</strong> Capacidad para crear cosas nuevas (11 letras)</li>
-                    <li><strong>2: Actitud de cumplimiento de las obligacioens (14 letras)</strong></li>
+                    <li><strong>1:</strong> Capacidad para crear cosas nuevas (11 letras)</li> <!--INNOVACION-->
+                    <li><strong>2:</strong> Actitud de cumplimiento de las obligaciones (14 letras)</li> <!--RESPONSABILIDAD-->
                 </ul>
                 <h3>Vertical</h3>
                 <ul>
-                    <li><strong>1:</strong> Actividad formativa de alta calidad (9 letras)</li>
-                    <li><strong>2:</strong>Principia ético fundamental (7 letras)</li>
+                    <li><strong>1:</strong> Conjunto de conocimientos brindados por un instructor (9 letras)</li><!--FORMACION-->
+                    <li><strong>2:</strong> Nos ayuda a distinguir entre lo correcto e incorrecto y establece normas sobre cómo debemos actuar en sociedad.(7 letras)</li><!--ETICA-->
                 </ul>
-
             </div>
-
+        
+            <!-- Crucigrama interactivo -->
             <div id="crucigrama-juego">
                 <table>
                     <tr>
+                        <!-- Innovación (Horizontal) -->
                         <td><input type="text" maxlength="1" data-answer="I"></td>
                         <td><input type="text" maxlength="1" data-answer="N"></td>
                         <td><input type="text" maxlength="1" data-answer="N"></td>
@@ -174,11 +177,89 @@
                         <td><input type="text" maxlength="1" data-answer="O"></td>
                         <td><input type="text" maxlength="1" data-answer="N"></td>
                     </tr>
+                    <tr>
+                        <!-- Formación (Vertical en la primera columna) -->
+                        <td><input type="text" maxlength="1" data-answer="F"></td>
+                        <td></td>
+                        <td><input type="text" maxlength="1" data-answer="O"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="text" maxlength="1" data-answer="R"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- Responsabilidad (Horizontal) -->
+                        <td><input type="text" maxlength="1" data-answer="R"></td>
+                        <td><input type="text" maxlength="1" data-answer="E"></td>
+                        <td><input type="text" maxlength="1" data-answer="S"></td>
+                        <td><input type="text" maxlength="1" data-answer="P"></td>
+                        <td><input type="text" maxlength="1" data-answer="O"></td>
+                        <td><input type="text" maxlength="1" data-answer="N"></td>
+                        <td><input type="text" maxlength="1" data-answer="S"></td>
+                        <td><input type="text" maxlength="1" data-answer="A"></td>
+                        <td><input type="text" maxlength="1" data-answer="B"></td>
+                        <td><input type="text" maxlength="1" data-answer="I"></td>
+                    </tr>
+                    <tr>
+                        <!-- Formación (Vertical) continúa y ÉTICA comienza -->
+                        <td><input type="text" maxlength="1" data-answer="O"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="text" maxlength="1" data-answer="L"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- Continuación de Formación y Ética (Vertical) -->
+                        <td><input type="text" maxlength="1" data-answer="M"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="text" maxlength="1" data-answer="I"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" maxlength="1" data-answer="A"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="text" maxlength="1" data-answer="C"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" maxlength="1" data-answer="C"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="text" maxlength="1" data-answer="A"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </table>
             </div>
-            <button id="verificar"> Verificar Respuestas</button>
+        
+            <button id="verificar">Verificar Respuestas</button>
             <div id="resultado"></div>
         </section>
+        
     </main>
 
     <footer>
