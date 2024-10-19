@@ -70,3 +70,42 @@ img {
 main {
     flex: 1;
 }
+
+#crucigrama-juego {
+    margin-top: 20px; /* margen */
+}
+
+#cricugrama-juego table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#crucigrama-juego input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px; /* tamaño de letra */
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+#verificar {
+    display: block;
+    margin: 20px auto;  /* margen */
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#verificar:hover {
+    background-color: #555;
+}
+
+#resultado {
+    text-align: center;
+    margin-top: 20px;  /* margen superior */
+    font-size: 18px; /* tamaño de letra */
+}

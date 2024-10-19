@@ -137,19 +137,47 @@
         <section id="articulo">
             <h2>Importancia del Programa de Análisis y Desarrollo de Software</h2>
             <p>El programa de Análisis y Desarrollo de Software es fundamental para el crecimiento de la industria
-                tecnológica en Colombia. 
-                El programa ofrece a los estudiantes las herramientas y los recussos de aprendizaje necesarios para participar en la
+                tecnológica en Colombia.
+                El programa ofrece a los estudiantes las herramientas y los recussos de aprendizaje necesarios para
+                participar en la
                 transformación digital del país.</p>
         </section>
 
         <!-- Crucigrama -->
         <section id="crucigrama">
             <h2>Crucigrama de la Cultura Institucional del SENA</h2>
-            <!-- Aquí se agregará un crucigrama funcional -->
-            <p>Completa el crucigrama con los términos de la cultura institucional del SENA:</p>
-            <div id="crucigrama-juego">
-                <!-- El crucigrama interactivo se implementaría con JavaScript -->
+            <div id="pistas">
+                <h3>Horizontal</h3>
+                <ul>
+                    <li><strong>1:</strong> Capacidad para crear cosas nuevas (11 letras)</li>
+                    <li><strong>2: Actitud de cumplimiento de las obligacioens (14 letras)</strong></li>
+                </ul>
+                <h3>Vertical</h3>
+                <ul>
+                    <li><strong>1:</strong> Actividad formativa de alta calidad (9 letras)</li>
+                    <li><strong>2:</strong>Principia ético fundamental (7 letras)</li>
+                </ul>
+
             </div>
+
+            <div id="crucigrama-juego">
+                <table>
+                    <tr>
+                        <td><input type="text" maxlength="1" data-answer="I"></td>
+                        <td><input type="text" maxlength="1" data-answer="N"></td>
+                        <td><input type="text" maxlength="1" data-answer="N"></td>
+                        <td><input type="text" maxlength="1" data-answer="O"></td>
+                        <td><input type="text" maxlength="1" data-answer="V"></td>
+                        <td><input type="text" maxlength="1" data-answer="A"></td>
+                        <td><input type="text" maxlength="1" data-answer="C"></td>
+                        <td><input type="text" maxlength="1" data-answer="I"></td>
+                        <td><input type="text" maxlength="1" data-answer="O"></td>
+                        <td><input type="text" maxlength="1" data-answer="N"></td>
+                    </tr>
+                </table>
+            </div>
+            <button id="verificar"> Verificar Respuestas</button>
+            <div id="resultado"></div>
         </section>
     </main>
 
@@ -159,6 +187,7 @@
 
     <!-- Script para manejar el crucigrama -->
     <script src="crucigrama.js"></script>
+
 </body>
 
 </html>
