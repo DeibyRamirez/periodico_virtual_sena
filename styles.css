@@ -48,3 +48,37 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+
+/* Centrar el himno */
+#himno {
+    text-align: center;
+}
+
+/* Reducir el tamaño de la imagen */
+img {
+    width: 300px;
+    /* Ajusta según el tamaño deseado */
+    display: block;
+    margin: 0 auto;
+    /* Para centrar la imagen */
+}
+
+/* Asegurarse de que el footer no cubra el contenido */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    /* Esto permite que el contenido principal ocupe el espacio disponible */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    position: relative;
+}
