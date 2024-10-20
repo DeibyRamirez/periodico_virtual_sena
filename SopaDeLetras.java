@@ -21,47 +21,41 @@ public class SopaDeLetras {
 
         // Colocar palabras en posiciones aleatorias
         for (String palabra : palabras) {
-            boolean colocada = false;
-            int intentos = 0;
+            boolean colocada = false;  // Variable para verificar si la palabra se colocó
+            int intentos = 0;  // Control de intentos para evitar ciclos infinitos
 
+            // Se intentará colocar la palabra en posiciones aleatorias hasta que se logre o se superen los intentos
             while (!colocada && intentos < 1000) {
                 int fila = r.nextInt(Nfilas);
                 int columna = r.nextInt(Ncolumnas);
-                // Elegir una dirección: 0 = horizontal, 1 = vertical
-                int direccion = r.nextInt(2); 
 
-                if (direccion == 0 && columna + palabra.length() <= Ncolumnas) { // Horizontal
+                // Verificar si hay espacio en la fila para la palabra
+                if (columna + palabra.length() <= Ncolumnas) {
                     boolean espacioLibre = true;
+
+                    // Comprobar que las posiciones estén libres
                     for (int j = 0; j < palabra.length(); j++) {
-                        if (!matriz[fila][columna + j].equals(String.valueOf((char) ('A' + r.nextInt(26))))) {
+                        if (matriz[fila][columna + j].length() != 1) {
                             espacioLibre = false;
                             break;
                         }
                     }
 
+                    // Si hay espacio libre, colocar la palabra
                     if (espacioLibre) {
                         for (int j = 0; j < palabra.length(); j++) {
                             matriz[fila][columna + j] = String.valueOf(palabra.charAt(j));
                         }
-                        colocada = true;
-                    }
-                } else if (direccion == 1 && fila + palabra.length() <= Nfilas) { // Vertical
-                    boolean espacioLibre = true;
-                    for (int j = 0; j < palabra.length(); j++) {
-                        if (!matriz[fila + j][columna].equals(String.valueOf((char) ('A' + r.nextInt(26))))) {
-                            espacioLibre = false;
-                            break;
-                        }
-                    }
-
-                    if (espacioLibre) {
-                        for (int j = 0; j < palabra.length(); j++) {
-                            matriz[fila + j][columna] = String.valueOf(palabra.charAt(j));
-                        }
-                        colocada = true;
+                        colocada = true;  // La palabra fue colocada
                     }
                 }
+
                 intentos++;
+            }
+
+            // Si no se pudo colocar la palabra, se muestra un mensaje
+            if (!colocada) {
+                System.out.println("No se pudo colocar la palabra: " + palabra);
             }
         }
 
