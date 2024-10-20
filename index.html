@@ -157,22 +157,7 @@
     </footer>
 
     <script>
-        // Definir las palabras que se pueden buscar en la sopa de letras
-        const palabras = ["CULTURA", "INNOVACION", "RESPONSABILIDAD", "CALIDAD", "COMPROMISO"];
-
-        function verificarPalabra() {
-            const input = document.getElementById("wordInput").value.toUpperCase();
-            const resultado = document.getElementById("resultado");
-
-            if (palabras.includes(input)) {
-                resultado.textContent = "¡Correcto! La palabra está en la sopa de letras.";
-            } else {
-                resultado.textContent = "Incorrecto. Intenta nuevamente.";
-            }
-
-            // Limpiar el campo de entrada
-            document.getElementById("wordInput").value = '';
-        }
+        src = "logica.js"
     </script>
 </body>
 

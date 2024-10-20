@@ -57,6 +57,7 @@ footer {
 /* Centrar el himno */
 #himno {
     text-align: center;
+    line-height: 1.5; /* Espaciado entre líneas */
 }
 
 /* Reducir el tamaño de la imagen */
@@ -64,8 +65,7 @@ img {
     width: 300px;
     /* Ajusta según el tamaño deseado */
     display: block;
-    margin: 0 auto;
-    /* Para centrar la imagen */
+    margin: 20px auto; /* Para centrar la imagen y añadir margen superior e inferior */
 }
 
 /* El contenido principal debe ocupar el espacio disponible */
@@ -74,51 +74,48 @@ main {
 }
 
 #crucigrama-juego {
-    margin-top: 20px;
-    /* margen */
+    margin-top: 20px; /* margen */
 }
 
-#crucigrama-juego table {
-    margin: 20px auto;
+#sopa-de-letras {
+    margin: 20px auto; /* Centrar la tabla de sopa de letras */
+}
+
+#sopa-de-letras table {
     border-collapse: collapse;
 }
 
-#crucigrama-juego td {
+#sopa-de-letras td {
     width: 40px;
     height: 40px;
-    border: 1px solid #000;
-    /* Bordes para las celdas visibles */
-    background-color: #e6f7ff;
-    /* Fondo azul claro  para las celdas con palabras*/
+    border: 1px solid #000; /* Bordes para las celdas visibles */
+    background-color: #e6f7ff; /* Fondo azul claro para las celdas con palabras */
     text-align: center;
+    vertical-align: middle; /* Centrar verticalmente el texto */
 }
 
 /* Estilo para los inputs (casillas) del crucigrama */
-#crucigrama-juego input {
+#sopa-de-letras input {
     width: 100%;
     height: 100%;
     text-align: center;
     font-size: 20px;
-    background-color: #b3e5fc;
-    /* Fondo mas claro */
-    color: #333;
-    /* Texto en color oscuro */
+    background-color: #b3e5fc; /* Fondo más claro */
+    color: #333; /* Texto en color oscuro */
     border: none;
     outline: none;
-    text-transform: uppercase;
-    /* Texto en mayúsculas */
+    text-transform: uppercase; /* Texto en mayúsculas */
 }
 
 /* Ocultar las celdas que no tienen inputs */
-#crucigrama-juego td:empty {
+#sopa-de-letras td:empty {
     border: none;
     background-color: transparent;
 }
 
 #verificar {
     display: block;
-    margin: 20px auto;
-    /* margen */
+    margin: 20px auto; /* margen */
     padding: 10px 20px;
     background-color: #333;
     color: white;
@@ -132,10 +129,8 @@ main {
 
 #resultado {
     text-align: center;
-    margin-top: 20px;
-    /* margen superior */
-    font-size: 18px;
-    /* tamaño de letra */
+    margin-top: 20px; /* margen superior */
+    font-size: 18px; /* tamaño de letra */
 }
 
 .logo {
