@@ -16,6 +16,16 @@ header {
     text-align: center;
 }
 
+.logo {
+    position: fixed;  /* Mantiene el logo en una posición fija */
+    top: 20px;        /* Espacio desde la parte superior de la ventana */
+    right: 20px;      /* Espacio desde el lado derecho de la ventana */
+    width: 100px;     /* Ajusta el tamaño según sea necesario */
+    height: auto;     /* Mantiene la relación de aspecto de la imagen */
+    z-index: 1000;    /* Asegura que esté por encima de otros elementos */
+}
+
+
 nav ul {
     list-style: none;
     padding: 0;

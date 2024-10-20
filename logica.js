@@ -1,4 +1,4 @@
-const palabras = ["CULTURA", "INNOVACION", "COMPROMISO", "EXCELENCIA", "SOLIDARIDAD", "INCLUSION", "EQUIDAD"]; // Lista de palabras
+const palabras = ["ETICA", "INNOVACION", "RESPONSABILIDAD", "FORMACION", "DESARROLLO", "COMPROMISO", "EQUIDAD"]; // Lista de palabras
 let contador = palabras.length; // Contador de palabras restantes
 
 // Función para verificar la palabra
