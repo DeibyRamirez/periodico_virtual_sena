@@ -7,15 +7,19 @@ document.getElementById('verificar').addEventListener('click', () => {
     const resultado = document.getElementById('resultado');
 
     if (palabras.includes(inputPalabra)) {
-        resultado.textContent = `¡Correcto! La palabra "${inputPalabra}" está en la lista.`;
-        // Eliminar la palabra de la lista y disminuir el contador
-        palabras.splice(palabras.indexOf(inputPalabra), 1);
-        contador--;
+        resultado.textContent = `¡Correcto! La palabra "${inputPalabra}" está en la sopa de letras.`;
+        // Puedes agregar lógica aquí para eliminar la palabra de la lista o disminuir el contador
+        palabras.splice(palabras.indexOf(inputPalabra), 1); // Elimina la palabra de la lista
+        contador--; // Disminuye el contador
     } else {
-        resultado.textContent = `La palabra "${inputPalabra}" no está en la lista.`;
+        resultado.textContent = `Incorrecto. La palabra "${inputPalabra}" no está en la sopa de letras.`;
     }
 
-    // Mostrar el contador de palabras restantes
-    resultado.textContent += ` Palabras restantes: ${contador}`;
-    document.getElementById('input-palabra').value = ''; // Limpiar el input
+    // Limpiar el campo de entrada después de verificar
+    document.getElementById('input-palabra').value = '';
+
+    // Mensaje de fin de juego si se acabaron las palabras
+    if (contador === 0) {
+        resultado.textContent = "¡Felicidades! Has encontrado todas las palabras.";
+    }
 });
