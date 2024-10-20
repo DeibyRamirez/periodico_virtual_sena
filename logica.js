@@ -12,21 +12,23 @@ const sopaDeLetras = [
     ["G", "J", "C", "L", "D", "H", "B", "M", "D", "T", "I", "Y", "J", "E", "F", "P", "Q", "W", "I", "I"]
 ];
 
-// Función para verificar si la palabra se encuentra en la sopa de letras
 function verificarPalabra() {
     const input = document.getElementById("wordInput").value.toUpperCase();
     const resultado = document.getElementById("palabras-encontradas");
     const contador = document.getElementById("contador-palabras");
     let palabrasEncontradas = [];
 
+    // Verifica si la palabra ingresada está en la lista
     if (palabras.includes(input)) {
         palabrasEncontradas.push(input);
-        alert(`La palabra "${input}" se encontró en la sopa de letras.`);
+        resultado.innerHTML = `La palabra "${input}" se encontró en la sopa de letras.`;
     } else {
-        alert(`La palabra "${input}" no se encontró.`);
+        resultado.innerHTML = `La palabra "${input}" no se encontró.`;
     }
 
-    // Mostrar palabras encontradas
-    resultado.innerHTML = palabrasEncontradas.join(", ") || "Ninguna palabra encontrada.";
+    // Actualiza el contador de palabras encontradas
     contador.innerHTML = `Total de palabras encontradas: ${palabrasEncontradas.length}`;
 }
+
+// Asignar el evento al botón "Verificar"
+document.getElementById("verificar").addEventListener("click", verificarPalabra);
