@@ -15,9 +15,9 @@ header {
 
 .header-content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    padding:0 20px;
 }
 
 .title-logo {
@@ -27,12 +27,12 @@ header {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 36px;
     margin: 0;
 }
 
 .logo {
-    width: 80px;
+    width: 100px;
     height: auto;
 }
 
