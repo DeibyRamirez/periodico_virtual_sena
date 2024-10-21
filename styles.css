@@ -102,6 +102,13 @@ section {
 h2 {
     color: #333;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    display: block;
+    margin: 20px auto;
+}
 
 /* Estilo del footer */
 footer {
@@ -121,14 +128,6 @@ footer {
     /* Espaciado entre líneas */
 }
 
-/* Reducir el tamaño de la imagen */
-img {
-    width: 300px;
-    /* Ajusta según el tamaño deseado */
-    display: block;
-    margin: 20px auto;
-    /* Para centrar la imagen y añadir margen superior e inferior */
-}
 
 /* El contenido principal debe ocupar el espacio disponible */
 main {
