@@ -20,10 +20,9 @@ header {
     padding:0 20px;
 }
 
-.title-logo {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+h1, nav, .logo {
+    flex-grow: 1;
+    text-align: center;
 }
 
 h1 {
@@ -41,6 +40,7 @@ h1 {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .dropdown-item {
