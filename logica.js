@@ -12,7 +12,7 @@ document.getElementById('verificar').addEventListener('click', () => {
         palabras.splice(palabras.indexOf(inputPalabra), 1); // Elimina la palabra de la lista
         contador--; // Disminuye el contador
     } else {
-        resultado.textContent = `Incorrecto. La palabra "${inputPalabra}" no está en la sopa de letras.`;
+        resultado.textContent = `Incorrecto. La palabra "${inputPalabra}" no es la palabra que se nesecita en la sopa de letras.`;
     }
 
     // Limpiar el campo de entrada después de verificar
